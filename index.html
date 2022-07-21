@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="./css/style.css">
+        <title>SCI - Messages - Calculation</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-sm mt-1" id="container__border">
+                <div id="header__main-border" class="d-sm-flex justify-content-sm-center p-0 m-3">
+                    <!-- <div class="me-sm-1" id="bruker__logo-border">
+                        <img
+                            class="img-fluid"
+                            id="bruker__logo"
+                            src="./img/Bruker-logo.svg"
+                            alt="Bruker"
+                        >
+                    </div> -->
+                    <div class="ms-sm-1" id="sap__logo-border">
+                        <img id="sap__logo" src="./img/sap-logo-svg.svg" alt="SAP">
+                    </div>
+                </div>
+                <div class="text-center m-2">
+                    <h4 class="fw fw-bold">Message Estimations</h4>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="main__section">
+                <div class="container-sm">
+                    <div class="m-sm-2 row d-flex flex-column" id="">
+                        <form id="messageForm">
+                            <label class="fw fw-bold col-sm-4 col-form-label">Enter the number of the estimated messages</label>
+                            <div class="d-flex">
+                                <div class="col-sm-3">
+                                    <input
+                                        id="inputMessages"
+                                        type="number"
+                                        class="form-control border border-primary border-2"
+                                        placeholder="Enter messages ... "
+                                    >
+                                </div>
+                                <p class="ps-4 pt-2" id="message__costs"></p>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- table of messges -->
+                    <div class="d-sm-flex justify-content-sm-center">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Integration Suite
+                                        <br>
+                                        Additional Messages
+                                        <br>
+                                        (in Blocks)
+                                    </th>
+                                    <th>
+                                        Lower Bound
+                                        <br>
+                                        metric (Blocks)
+                                    </th>
+                                    <th>
+                                        Upper Bound
+                                        <br>
+                                        metric (Blocks)
+                                    </th>
+                                    <th>
+                                        Messages
+                                        <br>
+                                        from (1K)
+                                    </th>
+                                    <th>
+                                        Messages
+                                        <br>
+                                        to (1K)
+                                    </th>
+                                    <th>
+                                        List Price €
+                                        <br>
+                                        (Monthly)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="levels">
+                                <tr id="tiers">
+                                    <td id="tier">Tier 1</td>
+                                    <td id="lowerBound">1</td>
+                                    <td id="higherBound">50</td>
+                                    <td id="lowerMessage">10</td>
+                                    <td id="higherMessage">500</td>
+                                    <td id="price">7.00</td>
+                                </tr>
+                                <tr id="tiers">
+                                    <td id="tier">Tier 2</td>
+                                    <td id="lowerBound">51</td>
+                                    <td id="higherBound">250</td>
+                                    <td id="lowerMessage">500</td>
+                                    <td id="higherMessage">2500</td>
+                                    <td id="price">5.85</td>
+                                </tr>
+                                <tr id="tiers">
+                                    <td id="tier">Tier 3</td>
+                                    <td id="lowerBound">251</td>
+                                    <td id="higherBound">1000</td>
+                                    <td id="lowerMessage">2500</td>
+                                    <td id="higherMessage">10000</td>
+                                    <td id="price">5.00</td>
+                                </tr>
+                                <tr id="tiers">
+                                    <td id="tier">Tier 4</td>
+                                    <td id="lowerBound">1001</td>
+                                    <td id="higherBound">5000</td>
+                                    <td id="lowerMessage">10000</td>
+                                    <td id="higherMessage">50000</td>
+                                    <td id="price">4.25</td>
+                                </tr>
+                                <tr id="tiers">
+                                    <td id="tier">Tier 5</td>
+                                    <td id="lowerBound">5001</td>
+                                    <td id="higherBound">25000</td>
+                                    <td id="lowerMessage">50000</td>
+                                    <td id="higherMessage">250000</td>
+                                    <td id="price">3.50</td>
+                                </tr>
+                                <tr id="tiers">
+                                    <td id="tier">Tier 6</td>
+                                    <td id="lowerBound">25001</td>
+                                    <td id="higherBound6">&#8734;</td>
+                                    <td id="lowerMessage">250000</td>
+                                    <td id="higherMessage">&#8734;</td>
+                                    <td id="price">2.80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-sm">
+                <div class="text-center">
+                    <span class="fw-bold">&copy; 2022</span>
+                    - Tobias Kieser
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

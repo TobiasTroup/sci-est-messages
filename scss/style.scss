@@ -1,0 +1,30 @@
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+// #bruker__logo {
+//     width: 5vw;
+// }
+
+#sap__logo {
+    width: 5vw;
+}
+
+#container__border {
+    border: solid blue 3px;
+}
+
+main {
+    #input__width {
+        width: 15%;
+    }
+}
